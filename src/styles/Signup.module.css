@@ -1,0 +1,337 @@
+.globalContainer {
+  display: flex;
+}
+
+.asideContainer {
+  flex: 1;
+  background: url(../assets/img/landing-banner.png);
+  width: 50%;
+  background-size: cover;
+  background-position: 50% 0;
+  padding: 50px 5%;
+}
+
+.logo a {
+  font-family: Nunito Sans;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.asideContainer .title {
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #FFFFFF;
+}
+
+.asideContainer .info {
+  margin-top: 30px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mainContainer {
+  flex: 1;
+  padding: 50px 5%;
+  background: #FAFCFF;
+}
+
+.mainContainer .mainLogo {
+  font-family: Nunito Sans;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3A3D42;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.mainContainer .title {
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+}
+
+.mainContainer .info {
+  margin: 20px 0px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: rgba(58, 61, 66, 0.6);
+}
+
+.inputContainer {
+  margin: 20px 0px;
+  height: 42px;
+  width: 100%;
+}
+
+.borderInactive {
+  border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+}
+
+.borderActive {
+  border-bottom: 1.5px solid #6379F4
+}
+
+.inputContainer label {
+  display: flex;
+  align-items: center;
+}
+
+.inputContainer .icon {
+  width: 20px;
+  height: 20px;
+  color: rgba(169, 169, 169, 0.6);
+}
+
+.inputContainer .iconActive {
+  width: 20px;
+  height: 20px;
+  color: #6379F4
+}
+
+.eye {
+  cursor: pointer;
+}
+
+.inputContainer input {
+  padding: 5px 2.5%;
+  border: none;
+  height: 40px;
+  width: 85%;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+  background: #FAFCFF;
+}
+
+.inputContainer input::placeholder {
+  color: rgba(169, 169, 169, 0.8);
+}
+
+
+.inputContainer input:focus {
+  outline: none;
+}
+
+.forgot {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.forgot a {
+  text-decoration: none;
+  color: rgba(58, 61, 66, 0.8);
+  cursor: pointer;
+}
+
+.forgot a:hover {
+  font-weight: 700;
+  color: #6379F4;
+}
+
+.button {
+  margin-top: 30px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #6379F4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+}
+
+.buttonInactive {
+  margin-top: 30px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #DADADA;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #88888F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.errorMsg {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: red
+}
+
+.successMsg {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: green
+}
+
+.login {
+  margin-top: 30px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(58, 61, 66, 0.8);
+}
+
+.login a {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6379F4;
+  cursor: pointer;
+}
+
+.modalHeader {
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+.modalBody {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+.modalPrimaryButton {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  background: #6379F4;
+  color: #FFFFFF;
+}
+
+.pinContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reactCodeInput {
+  width: auto;
+}
+
+.reactCodeInput input {
+  font-family: Nunito Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  margin: 0px 10px;
+  width: 50px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.reactCodeInput input::-webkit-outer-spin-button,
+.reactCodeInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.reactCodeInput input:focus {
+  outline: none;
+}
+
+.pinSuccess{
+  padding: 100px 5%;
+}
+
+.checkContainer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #1EC15F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkContainer svg {
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .asideContainer {
+    display: none;
+  }
+
+  .mainContainer .mainLogo {
+    display: block;
+  }
+}

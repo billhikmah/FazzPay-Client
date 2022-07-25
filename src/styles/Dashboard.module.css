@@ -1,0 +1,372 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding-left: 2.5%;
+}
+
+.balanceContainer {
+  background: #6379F4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+}
+
+.balanceLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.balanceLeft .title {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E0E0E0;
+}
+
+.balanceLeft .balance {
+  font-family: Nunito Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.balanceLeft .phone {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #DFDCDC;
+}
+
+.balanceRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.balanceRight .transfer {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.balanceRight .icon {
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+}
+
+.bottomContainer {
+  margin-top: 20px;
+  display: flex;
+  gap: 2.5%;
+}
+
+.chartContainer {
+  width: 60%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 20px 2.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.chartTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chartTop .title {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6A6A6A;
+  margin: 5px 0;
+}
+
+.chartTop .total {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+
+}
+
+.income .icon {
+  width: 20px;
+  height: 20px;
+  color: #1EC15F;
+}
+
+.expense .icon {
+  width: 20px;
+  height: 20px;
+  color: #FF5B37;
+}
+
+.chartBottom {
+  display: flex;
+  height: 150px;
+  justify-content: space-around;
+}
+
+.dayContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50px;
+  gap: 10px;
+}
+
+.expenseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50px;
+  gap: 10px;
+}
+
+.dayContainer .day {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #8F8F8F;
+}
+
+.dayContainer .bar {
+  background: #6379F4;
+  border-radius: 15px;
+  width: 15px;
+}
+.expenseContainer .barExpense {
+  background: #9DA6B5;;
+  border-radius: 15px;
+  width: 15px;
+}
+
+.historyContainer {
+  padding: 20px 2.5%;
+  width: 37.5%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.historyContainer .titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.historyContainer .title {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+}
+
+.historyContainer .seeAll {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6379F4;
+  cursor: pointer;
+
+}
+
+.transactionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.transactionContainer .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pictNameContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.transactionContainer .profPictContainer {
+  width: 50px;
+  height: 50px;
+}
+
+.profPict {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 10px;
+}
+
+.transactionContainer .nameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.transactionContainer .name {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4D4B57;
+
+}
+
+.transactionContainer .status {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7A7886;
+}
+
+.transactionContainer .nominal {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.transactionContainer .in {
+  color: #1EC15F;
+}
+
+.transactionContainer .out {
+  color: #FF5B37;
+}
+
+.transactionContainer .pending {
+  color: #7A7886;
+}
+
+
+.modalHeader {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.modalBody {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.inputTopUpContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(169, 169, 169, 0.6);
+  border-radius: 10px;
+  height: 60px;
+}
+
+.inputTopUp {
+  align-self: center;
+  border: none;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.4);
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.inputTopUp:focus {
+  outline: none;
+}
+
+.inputTopUp::-webkit-outer-spin-button,
+.inputTopUp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modalPrimaryButton {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  background: #6379F4;
+  color: #FFFFFF;
+}
+
+.modalPrimaryButton a {
+  color: #FFFFFF;
+}

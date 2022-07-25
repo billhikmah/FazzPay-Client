@@ -1,0 +1,689 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding-left: 2.5%;
+}
+
+.profileCard {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 30px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profPictContainer {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.profPictContainer .profPict {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 15px;
+}
+
+.editSaveContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editSaveContainer .saveChange {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1EC15F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.editSaveContainer .saveChange .icon {
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+}
+
+.editContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  gap: 10px;
+  color: #7A7886;
+  cursor: pointer;
+}
+
+.editContainer .edit {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.editContainer input {
+  display: none;
+}
+.none{
+  display: none;
+}
+.error{
+  color:#FF5B37;
+}
+.success{
+  color:#1EC15F
+}
+.name {
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #4D4B57;
+}
+
+.phone {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #7A7886;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.menuContainer .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E5E8ED;
+  border-radius: 10px;
+  width: 500px;
+  height: 60px;
+  padding: 0 20px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menuContainer .icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* Personal Information */
+
+.infoCard {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 30px 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoCard .title {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+}
+
+.infoCard .info {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7A7886;
+  width: 50%;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.cardContainer .editAction {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 5%;
+}
+
+.editAction .edit {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #6379F4;
+  cursor: pointer;
+}
+
+.editAction .save {
+  margin-right: 20px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #6379F4;
+  color: #FFFFFF;
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer .card {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 20px 30px;
+  height: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.cardContainer .card .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardContainer .card .title {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7A7886;
+}
+
+.cardContainer .card .value {
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #514F5B;
+}
+
+.cardContainer .card input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  /* padding-left: 10px; */
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #514F5B;
+  width: 500px;
+}
+
+.cardContainer .card input:focus {
+  outline: none;
+}
+
+.cardContainer .card .email {
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7A7886;
+}
+
+.cardContainer .card .manage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6379F4;
+  cursor: pointer;
+}
+
+/* PHONE */
+
+.phoneContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.phoneContainer .inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  width: 60%;
+  /* margin-bottom: 50px; */
+}
+
+.inputInactive {
+  border-bottom: 2px solid rgba(169, 169, 169, 0.6);
+}
+
+.inputActive {
+  border-bottom: 2px solid #6379F4;
+}
+
+.phoneContainer .inputContainer .iconInactive {
+  width: 25px;
+  height: 25px;
+  color: rgba(169, 169, 169, 0.6);
+}
+
+.phoneContainer .inputContainer .icon {
+  width: 25px;
+  height: 25px;
+  color: #6379F4;
+}
+
+.phoneContainer .inputContainer .indo,
+.phoneContainer .inputContainer input {
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+}
+
+.phoneContainer .inputContainer input {
+  border: none;
+}
+
+.phoneContainer .inputContainer input:focus {
+  outline: none;
+}
+
+.errorMsg {
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FF5B37;
+}
+
+.successMsg {
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1EC15F;
+}
+
+.confirmButtonInactive {
+  background: #DADADA;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #88888F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+  height: 50px;
+}
+
+.confirmButton {
+  background: #6379F4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  width: 60%;
+  height: 50px;
+}
+
+/* CHANGE PASS */
+
+.passContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.passContainer .inputContainer {
+  margin: 20px 0px;
+  height: 42px;
+  width: 60%;
+}
+
+.borderInactive {
+  border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+}
+
+.borderActive {
+  border-bottom: 1.5px solid #6379F4
+}
+
+.passContainer .inputContainer label {
+  display: flex;
+  align-items: center;
+}
+
+.passContainer .inputContainer .icon {
+  width: 20px;
+  height: 20px;
+  color: rgba(169, 169, 169, 0.6);
+}
+
+.passContainer .inputContainer .iconActive {
+  width: 20px;
+  height: 20px;
+  color: #6379F4
+}
+
+.eye {
+  cursor: pointer;
+}
+
+.passContainer .inputContainer input {
+  padding: 5px 2.5%;
+  border: none;
+  height: 40px;
+  width: 85%;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+}
+
+.passContainer .inputContainer input::placeholder {
+  color: rgba(169, 169, 169, 0.8);
+}
+
+
+.passContainer .inputContainer input:focus {
+  outline: none;
+}
+
+
+.passContainer .button {
+  margin-top: 30px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #6379F4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60%;
+  cursor: pointer;
+}
+
+.buttonInactive {
+  margin-top: 30px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #DADADA;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #88888F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 60%;
+}
+
+/* CHANGE PIN */
+.pinContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 30px;
+}
+
+.pinContainer .title{
+  font-family: Nunito Sans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.reactCodeInput {
+  width: auto;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.reactCodeInput input {
+  font-family: Nunito Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  margin: 0px 10px;
+  width: 50px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 2px solid#dbd8d8;
+}
+
+.reactCodeInput input::-webkit-outer-spin-button,
+.reactCodeInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.reactCodeInput input:focus {
+  outline: none;
+}
+
+.pinSuccess{
+  padding: 100px 5%;
+}
+
+.pinContainer .button {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #6379F4;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50%;
+}
+.pinContainer .buttonInactive {
+  margin-top: 0;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: #DADADA;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  color: #88888F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50%;
+}
+
+
+/* MODAL LOGOUT */
+
+.modalHeader {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.modalBody {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.modalHeader {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.modalBody {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+.modaltitle{
+  padding: 15px;
+  text-align: center;
+}
+.modalcontent{
+  text-align: center;
+}
+.modalfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  padding: 30px;
+}
+.modalbuttonclose{
+  color: #000000;
+  background: #d8d6d6;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.modalbutton{
+  color: #ffffff;
+  background:  #6379F4;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}

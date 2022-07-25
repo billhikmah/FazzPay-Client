@@ -1,0 +1,525 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding-left: 2.5%;
+}
+
+.transferCard {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 30px 5%;
+}
+
+.transferCard .titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transferCard .title {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+  margin-bottom: 20px;
+}
+
+.transferCard .title2 {
+  margin-top: 30px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3D42;
+  margin-bottom: 20px;
+}
+
+.searchContainer {
+  background: rgba(58, 61, 66, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  height: 40px;
+  gap: 10px;
+}
+
+.searchContainer .iconContainer {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #A9A9A9;
+}
+
+.searchContainer input {
+  border: none;
+  background: none;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.searchContainer input::placeholder {
+  color: rgba(58, 61, 66, 0.4);
+
+}
+
+.searchContainer input:focus {
+  outline: none;
+}
+
+.receiverContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.userCard {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.profPictContainer {
+  width: 80px;
+  height: 80px;
+}
+
+.profPictContainer .profPict {
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nameContainer .name {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4D4B57;
+}
+
+.nameContainer .number {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7A7886;
+}
+
+/* PAGINATION */
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination .iconContainer {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #070707;
+}
+
+.pagination .inactive{
+  background-color: #FFFFFF;
+}
+.pagination .active{
+  background-color: #6379F4;
+}
+
+.pagination .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* transfer detail */
+.transferInfo {
+  margin-top: 40px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #7A7886;
+
+}
+
+.transferInputContainer {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transferInputContainer input {
+  font-family: Nunito Sans;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0px;
+  text-align: center;
+  border: none;
+  color: #6379F4;
+
+}
+
+.transferInputContainer input:focus {
+  outline: none;
+}
+
+.transferInputContainer input::-webkit-outer-spin-button,
+.transferInputContainer input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.balanceInfo {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3A3D42;
+}
+
+.noteContainer {
+  margin-top: 30px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noteContainer .note {
+  border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noteContainer .noteActive {
+  border-bottom: 1.5px solid #6379F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noteContainer .icon {
+  width: 20px;
+  height: 20px;
+  color: rgba(169, 169, 169, 0.6);
+  ;
+}
+
+.noteContainer .iconActive {
+  width: 20px;
+  height: 20px;
+  color: #6379F4;
+}
+
+.noteContainer input {
+  border: none;
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.noteContainer input::placeholder {
+  color: rgba(169, 169, 169, 0.8);
+}
+
+.noteContainer input:focus {
+  outline: none;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.continueButton {
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6379F4;
+  color: #FFFFFF;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.continueButtonInactive {
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #88888F;
+  background: #DADADA;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.cardDetail {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  gap: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.cardDetail .title {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #7A7886;
+  margin-bottom: 10px;
+}
+
+.cardDetail .info {
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.modalHeader {
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+.modalBody {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+.modalPrimaryButton {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  background: #6379F4;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+.pinContainer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reactCodeInput {
+  width: auto;
+  border-radius: 5px;
+}
+
+.reactCodeInput input {
+  font-family: Nunito Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  margin: 0px 10px;
+  width: 50px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid#dbd8d8;
+}
+.reactCodeInput:focus{
+  outline: 2px solid #6379F4;
+  border: 2px solid #6379F4;
+}
+.reactCodeInput input::-webkit-outer-spin-button,
+.reactCodeInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.reactCodeInput input:focus {
+  outline: none;
+}
+
+.errorMsg {
+  font-family: Nunito Sans;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: red
+}
+
+/* response */
+.responseContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.responseContainer .logoContainer {
+  color: #FFFFFF;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  background: #FF5B37;
+}
+
+.success {
+  background: #1EC15F;
+}
+
+.logoContainer .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.responseContainer .title {
+  margin-top: 20px;
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.responseContainer .info {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 70%;
+}
+
+.downloadButton {
+  margin-top: 50px;
+  margin-right: 20px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  color: #6379F4;
+  align-items: center;
+  background: rgba(99, 121, 244, 0.15);
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+  border-radius: 12px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.modalPrimaryButton a{
+  color: #FFFFFF;
+}
+.none{
+  display: none;
+}
+.filter{
+  background: rgba(58, 61, 66, 0.1);
+  border-radius: 12px;
+  border: none;
+  padding: 0px 10px;
+}

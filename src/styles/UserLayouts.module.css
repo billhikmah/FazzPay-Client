@@ -1,0 +1,297 @@
+.header {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+
+.header .logo a{
+  font-family: Nunito Sans;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6379F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.profPictContainer {
+  width: 50px;
+  height: 50px;
+
+}
+
+.profPict {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 10px;
+}
+
+.nameContainer {
+  margin: 0px 10px;
+  width: 100px;
+}
+
+.userName {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3A3D42;
+
+}
+
+.userNumber {
+  font-family: Nunito Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #3A3D42E5;
+
+
+}
+
+.notif .icon {
+  width: 20px;
+  height: 20px;
+  color: #4D4B57;
+
+  cursor: pointer;
+}
+
+.mainContainer {
+  background-color: #FAFCFF;
+  display: flex;
+  padding: 30px 5%;
+}
+
+.nav {
+  background-color: #FFFFFF;
+  width: 25%;
+  border-radius: 25px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 40px 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainNav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menuActive {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6379F4;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(58, 61, 66, 0.8);
+  display: flex;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+
+}
+
+.mainContainer .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout {
+  margin-top: 50px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(58, 61, 66, 0.8);
+  display: flex;
+  align-items: center;
+  height: 50px;
+  cursor: pointer;
+
+}
+
+.logout .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+}
+
+.footer {
+  background: #6379F4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.footer .copyright {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(239, 239, 239, 0.9);
+}
+
+.footer .right {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #EFEFEF;
+}
+
+
+.modalHeader {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.modalBody {
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+
+.inputTopUpContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(169, 169, 169, 0.6);
+  border-radius: 10px;
+  height: 60px;
+}
+
+.inputTopUp {
+  align-self: center;
+  border: none;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.4);
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.inputTopUp:focus{
+  outline: none;
+}
+
+.inputTopUp::-webkit-outer-spin-button,
+.inputTopUp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modalPrimaryButton {
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  background: #6379F4;
+  color: #FFFFFF;
+}
+
+.modalPrimaryButton a{
+  color: #FFFFFF;
+}
+.modaltitle{
+  padding: 15px;
+  text-align: center;
+}
+.modalcontent{
+  text-align: center;
+}
+.modalfooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  padding: 30px;
+}
+.modalbuttonclose{
+  color: #000000;
+  background: #d8d6d6;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.modalbutton{
+  color: #ffffff;
+  background:  #6379F4;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
