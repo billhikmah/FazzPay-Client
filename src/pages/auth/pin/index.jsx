@@ -32,11 +32,9 @@ export default function Login() {
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.patch(`${process.env.NEXT_PUBLIC_BE_HOST}/user/pin/${data.id}`, body, config)
       setMsg(response.data.msg)
-      console.log(response)
       setIsSuccess(true)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
       setIsLoading(false)
     }
   }

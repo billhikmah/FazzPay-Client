@@ -55,14 +55,12 @@ export default function ChangePass() {
       const body = { oldPassword, newPassword, confirmPassword }
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.patch(`${process.env.NEXT_PUBLIC_BE_HOST}/user/password/${userData.id}`, body, config)
-      console.log(response)
       setIsError(false)
       setMsg(response.data.msg)
       setLoading(false)
     } catch (error) {
       setIsError(true)
       setMsg(error.response.data.msg)
-      console.log(error)
       setLoading(false)
     }
   }

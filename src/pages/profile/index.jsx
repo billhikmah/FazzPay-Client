@@ -62,13 +62,11 @@ export default function Profile() {
       const { token } = data
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.post(`${process.env.NEXT_PUBLIC_BE_HOST}/auth/logout`, config)
-      console.log(response)
       dispatch(logoutAction())
       setLoading(false)
       setShowLogout(false)
       router.push('/')
     } catch (error) {
-      console.log(error)
       setLoading(false)
     }
   }

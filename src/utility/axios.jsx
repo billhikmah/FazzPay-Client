@@ -5,7 +5,6 @@ export const doLogin = (body) => {
 }
 
 export const getUserData = (id, token) => {
-  console.log(id, token, "halo")
   const config = { headers: { Authorization: `Bearer ${token}` } }
   return axios.get(`${process.env.NEXT_PUBLIC_BE_HOST}/user/profile/${id}`, config)
 }

@@ -47,7 +47,6 @@ export default function UserDetail() {
       setUser(response.data.data)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
       setIsLoading(false)
     }
   }
@@ -71,7 +70,6 @@ export default function UserDetail() {
     } catch (error) {
       setIsError(true)
       setMsg(error.response.data.msg)
-      console.log(error)
       setIsLoading(false)
     }
   }
@@ -92,7 +90,6 @@ export default function UserDetail() {
     } catch (error) {
       setIsError(true)
       setMsg("The pin is incorrect.")
-      console.log(error)
       setIsLoading(false)
     }
   }
@@ -103,14 +100,12 @@ export default function UserDetail() {
       const { token } = data
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.get(`${process.env.NEXT_PUBLIC_BE_HOST}/export/transaction/${transId}`, config)
-      console.log(response)
       setUrl(response.data.data.url)
       setMsg(response.data.msg)
       setShowDownload(true)
       setIsLoading(false)
     } catch (error) {
       setMsg(error.response.data.msg)
-      console.log(error)
       setIsLoading(false)
     }
   }

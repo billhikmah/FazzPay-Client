@@ -38,14 +38,12 @@ export default function ChangePin() {
       const body = { pin }
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.patch(`${process.env.NEXT_PUBLIC_BE_HOST}/user/pin/${userData.id}`, body, config)
-      console.log(response)
       setIsError(false)
       setMsg(response.data.msg)
       setPage('check')
       setLoading(false)
     } catch (error) {
       setIsError(true)
-      console.log(error)
       setLoading(false)
     }
   }
@@ -65,7 +63,6 @@ export default function ChangePin() {
       setIsError(true)
       setMsg(error.response.data.msg)
       setMsg("Wrong Pin")
-      console.log(error)
       setLoading(false)
     }
   }

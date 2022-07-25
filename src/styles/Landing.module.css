@@ -248,7 +248,7 @@
   background: #FAFCFF;
 }
 
-.section4 .money {
+ .money {
   font-family: Nunito Sans;
   font-size: 68px;
   font-weight: 800;
@@ -499,4 +499,12 @@
   display: flex;
   justify-content: space-between;
   width: 40%;
+}
+
+@media (max-width: 600px) {
+  .money {
+    width: 80%;
+    flex-direction: column;
+    font-size: 30px;
+  }
 }

@@ -36,10 +36,8 @@ export default function UserLayout({ children, title, name, number }) {
       setMsg(response.data.msg)
       setLink(response.data.data.redirectUrl)
       setIsSuccess(true)
-      console.log(response.data)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
       setIsSuccess(false)
       setIsLoading(false)
     }
@@ -51,13 +49,11 @@ export default function UserLayout({ children, title, name, number }) {
       const { token } = data
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.post(`${process.env.NEXT_PUBLIC_BE_HOST}/auth/logout`, config)
-      console.log(response)
       dispatch(logoutAction())
       setIsLoading(false)
       setShowLogout(false)
       router.push('/')
     } catch (error) {
-      console.log(error)
       setIsLoading(false)
     }
   }

@@ -16,8 +16,6 @@ import { getUserDataAction } from '../../redux/actionCreators/userData';
 import { currencyFormatter } from '../../helper/formatter';
 
 export default function Dashboard() {
-  console.log(process.env.NEXT_PUBLIC_BE_HOST)
-  console.log(process.env.NEXT_PUBLIC_CLOUDINARY)
   const [title, setTitle] = useState("")
   const [showTopUp, setShowTopUp] = useState(false)
   const [amount, setAmount] = useState(0)
@@ -41,12 +39,9 @@ export default function Dashboard() {
       const { token } = data
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.get(`${process.env.NEXT_PUBLIC_BE_HOST}/transaction/history?page=1&limit=4`, config)
-      console.log(`${process.env.NEXT_PUBLIC_BE_HOST}`)
-      console.log(response)
       setHistory(response.data.data)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
       setIsLoading(false)
     }
   }
@@ -57,13 +52,11 @@ export default function Dashboard() {
       const { token } = data
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.get(`${process.env.NEXT_PUBLIC_BE_HOST}/dashboard/${data.id}`, config)
-      console.log(response)
       setDashboard(response.data.data)
       setListExpense(response.data.data.listExpense)
       setListIncome(response.data.data.listIncome)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
       setIsLoading(false)
     }
   }
@@ -85,10 +78,8 @@ export default function Dashboard() {
       setMsg(response.data.msg)
       setLink(response.data.data.redirectUrl)
       setIsSuccess(true)
-      console.log(response.data)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
       setIsSuccess(false)
       setIsLoading(false)
     }

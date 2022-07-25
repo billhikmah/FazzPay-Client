@@ -41,10 +41,8 @@ export default function Transfer() {
       const response = await axios.get(url, config)
       setUser(response.data.data)
       setPagination(response.data.pagination)
-      console.log(response)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
       setIsLoading(false)
     }
   }

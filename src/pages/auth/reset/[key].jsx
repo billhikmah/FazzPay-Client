@@ -43,14 +43,11 @@ export default function Reset() {
       let response = await axios.patch(`${process.env.NEXT_PUBLIC_BE_HOST}/auth/reset-password`, body)
       setIsSuccess(true)
       setIsError(false)
-      console.log(response)
       setMsg(response.data.msg)
       setIsLoading(false)
     } catch (error) {
       setIsError(true)
-      console.log(error)
       setMsg(error.response.data.msg)
-      console.log(error);
       setIsLoading(false)
     }
   }

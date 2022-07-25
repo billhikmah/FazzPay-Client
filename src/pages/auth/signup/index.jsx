@@ -52,7 +52,6 @@ export default function Signup() {
     } catch (error) {
       setIsError(true)
       setMsg(error.response.data.msg)
-      console.log(error);
       setIsLoading(false)
     }
   }

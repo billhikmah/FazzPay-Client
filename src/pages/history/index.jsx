@@ -28,20 +28,16 @@ export default function History() {
       const { token } = data
       const config = { headers: { Authorization: `Bearer ${token}` } }
       const response = await axios.get(`${process.env.NEXT_PUBLIC_BE_HOST}/transaction/history?page=${page}&limit=${limit}&filter=${filter}`, config)
-      console.log(response)
       setHistory(response.data.data)
       setPagination(response.data.pagination)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
       setIsLoading(false)
     }
   }
 
   useEffect(() => {
     getHistory()
-    console.log(filter)
-    console.log(limit)
   }, [filter, limit, page])
 
   return (

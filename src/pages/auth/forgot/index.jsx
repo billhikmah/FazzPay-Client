@@ -33,9 +33,7 @@ export default function Forgot() {
       setIsLoading(false)
     } catch (error) {
       setIsError(true)
-      console.log(error)
       // setMsg(error.response.data.msg)
-      console.log(error);
       setIsLoading(false)
     }
   }
