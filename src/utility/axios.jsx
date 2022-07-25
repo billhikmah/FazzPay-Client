@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const doLogin = (body) => {
+  console.log(`${process.env.NEXT_PUBLIC_BE_HOST}/auth/login`)
   return axios.post(`${process.env.NEXT_PUBLIC_BE_HOST}/auth/login`, body)
 }
 
