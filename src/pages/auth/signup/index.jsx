@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 import Loading from '../../../components/Loading';
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Spinner } from "react-bootstrap";
 
 export default function Signup() {
   const [isPassShown, setIsPassShown] = useState(false)
@@ -67,7 +67,6 @@ export default function Signup() {
         </title>
       </Head>
       <main className={styles.globalContainer}>
-        {isLoading && <Loading />}
         <SignupAside />
         <section className={styles.mainContainer}>
           <div className={styles.mainLogo}>FazzPay</div>
@@ -114,7 +113,7 @@ export default function Signup() {
           {buttonActive ?
             <div className={styles.button}
               onClick={signUpHandler}
-            >Sign Up</div>
+            >{!isLoading ? "Sign Up" : <Spinner animation="border" variant="light" />}</div>
             :
             <div className={styles.buttonInactive}>Sign Up</div>
           }

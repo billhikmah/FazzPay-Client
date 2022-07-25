@@ -6,7 +6,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Person, Envelope, Lock, Eye, EyeSlash } from 'react-bootstrap-icons'
 import styles from '../../../styles/Signup.module.css'
-import Loading from '../../../components/Loading';
+import { Spinner } from "react-bootstrap";
 
 export default function Reset() {
   const [isPassShown, setIsPassShown] = useState(false)
@@ -69,7 +69,6 @@ export default function Reset() {
         </title>
       </Head>
       <main className={styles.globalContainer}>
-        {isLoading && <Loading />}
         <SignupAside />
         <section className={styles.mainContainer}>
           <div className={styles.mainLogo}>FazzPay</div>
@@ -106,7 +105,7 @@ export default function Reset() {
               : <div className={styles.successMsg}>{msg}</div>}
           {!isSuccess ?
             buttonActive ?
-              <div className={styles.button} onClick={resetPassHandler}>Reset Password</div>
+              <div className={styles.button} onClick={resetPassHandler}>{!isLoading ? "Reset Password" : <Spinner animation="border" variant="light" />}</div>
               :
               <div className={styles.buttonInactive} >Reset Password</div>
             :

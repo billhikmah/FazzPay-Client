@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { Person, Envelope, Lock, Eye, EyeSlash } from 'react-bootstrap-icons'
 import styles from '../../../styles/Signup.module.css'
 import Loading from '../../../components/Loading';
+import { Spinner } from "react-bootstrap";
 
 export default function Forgot() {
   const [isPassShown, setIsPassShown] = useState(false)
@@ -51,7 +52,6 @@ export default function Forgot() {
         </title>
       </Head>
     <main className={styles.globalContainer}>
-      {isLoading && <Loading />}
       <SignupAside />
       <section className={styles.mainContainer}>
         <div className={styles.mainLogo}>FazzPay</div>
@@ -71,7 +71,7 @@ export default function Forgot() {
             </div>
             {isError === null ? <></> : isError ? <div className={styles.errorMsg}>{msg}</div> : <div className={styles.successMsg}>{msg}</div>}
             {buttonActive ?
-            <div className={styles.button} onClick={forgotPassHandler}>Confirm</div>
+            <div className={styles.button} onClick={forgotPassHandler}>{!isLoading ? "Confirm" : <Spinner animation="border" variant="light" />}</div>
             :
             <div className={styles.buttonInactive} >Confirm</div>
           }    

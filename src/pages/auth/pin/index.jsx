@@ -8,6 +8,7 @@ import axios from "axios";
 import Loading from '../../../components/Loading';
 import styles from '../../../styles/Signup.module.css'
 import { Check2 } from "react-bootstrap-icons";
+import { Spinner } from "react-bootstrap";
 
 export default function Login() {
   const [pinCode, setPinCode] = useState("")
@@ -46,7 +47,6 @@ export default function Login() {
         </title>
       </Head>
       <main className={styles.globalContainer}>
-        {isLoading && <Loading />}
         <SignupAside />
         {isSuccess ?
           <section className={`${styles.mainContainer} ${styles.pinSuccess}`}>
@@ -77,7 +77,7 @@ export default function Login() {
               />
             </div>
             <div className={styles.button}
-              onClick={createPinHandler}>Confirm</div>
+              onClick={createPinHandler}>{!isLoading ? Confirm : <Spinner animation="border" variant="light" />}</div>
           </section>
         }
       </main>
